@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "install the nessecery dependencies"
+      - npm install
+  pre_build:
+    commands:
+      - echo "start to prebuild"
+  build:
+    commands:
+      - node index.js
+  post_build:
+    commands:
+      - echo "build compeletly"
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+    
