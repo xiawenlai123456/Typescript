@@ -9,10 +9,11 @@ phases:
       - echo "start to prebuild"
   build:
     commands:
-      - node index.js
+      - node index.js &
+      - echo "build compeltely"
   post_build:
     commands:
-      - echo "build compeletly"
+      - echo "finished"
 artifacts:
   files:
     - '**/*'
