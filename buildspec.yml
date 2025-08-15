@@ -14,11 +14,11 @@ phases:
   post_build:
     commands:
       - echo "finished"
+      - mkdir output
+      - cp index.js output/
+      - cp *.json output/
+      - zip -r myfile.zip output
 artifacts:
   files:
-    - 'index.js'
-    - 'package.json'
-    - 'package-lock.json'
-  discard-paths: no
-  zip: true
+    - myfile.zip
     
