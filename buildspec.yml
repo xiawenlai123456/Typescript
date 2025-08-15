@@ -16,6 +16,8 @@ phases:
       - echo "finished"
 artifacts:
   files:
-    - '**/*'
+    - 'index.js'
+    - 'package.json'
+    - 'package-lock.json'
   discard-paths: no
     
