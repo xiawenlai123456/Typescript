@@ -20,5 +20,5 @@ artifacts:
     - 'package.json'
     - 'package-lock.json'
   discard-paths: no
-  path: true
+  zip: true
     
