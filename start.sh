@@ -1,3 +1,3 @@
 #!/bin/bash
-echo $(pwd)
+cd /home/ec2-user
 node index.js
