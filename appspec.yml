@@ -5,22 +5,22 @@ files:
     destination: /home/ec2-user/
 hooks:
   ApplicationStop:
-    - location: output/appStop.sh
+    - location: appStop.sh
       timeout: 30
       runas: root
   BeforeInstall:
-    - location: output/beforeInstall.sh
+    - location: beforeInstall.sh
       timeout: 30
       runas: root
   Install:
-    - location: output/install.sh
+    - location: install.sh
       timeout: 30
       runas: root
   AfterInstall:
-    - location: output/afterInstall.sh
+    - location: afterInstall.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: output/start.sh
+    - location: start.sh
       timeout: 300
       runas: root
