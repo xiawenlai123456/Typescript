@@ -18,7 +18,8 @@ phases:
       - cp index.js output/
       - cp *.json output/
       - cp appspec.yml output/
-      - cp -r scripts output/
+      - mkdir output/scripts
+      - cp -r scripts output/scripts
       #- zip -r myfile.zip output
 artifacts:
   files:
