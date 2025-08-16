@@ -22,5 +22,5 @@ phases:
       #- zip -r myfile.zip output
 artifacts:
   files:
-    - output
+    - output/*
     
